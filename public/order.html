@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,noarchive,nofollow">
+    <title>Rachel Higgins</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Rachel Higgins</h1>
+        <img src="android-chrome-192x192.png" alt="Rachel Higgins">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+    <div class="wrapper">
+        <main>
+            <section>
+                <h2>Order</h2>
+                <article class="orderForm">
+                    <p>This order form allows you to choose from a selected list of products. Please enter the
+                        information
+                        in all required fields to place your purchase.</p>
+                    <form class="form-order" action="order_response.html" method="post">
+                        <fieldset class="fieldset-shipping">
+                            <legend class="legend-order">Shipping Information</legend>
+                            <label class="label-order" for="name">First and Last Name<span class="required"> *</span> :
+                                <input class="input-order" type="name" name="name" id="name" autocomplete="name"
+                                    required placeholder="First and Last Name" autofocus aria-required="true" />
+                            </label>
+                            <label class="label-order" for="email">Email<span class="required"> *</span> :
+                                <input class="input-order" type="email" name="email" id="email" autocomplete="email"
+                                    required pattern="[^ @]+@[^ @]+\.[a-z]+" placeholder="name@host.com"
+                                    aria-required="true" />
+                            </label>
+                            <label class="label-order" for="streetAddress">Street Address<span class="required">
+                                    *</span> :
+                                <input class="input-order" type="street" name="streetAddress" id="streetAddress"
+                                    autocomplete="streetAddress" required placeholder="Enter your street address"
+                                    aria-required="true" />
+                                </input>
+                            </label>
+                            <label class="label-order" for="city">City<span class="required"> *</span> :
+                                <input class="input-order" type="city" name="city" id="city" autocomplete="city"
+                                    required placeholder="Enter your city" aria-required="true" />
+                                </input>
+                            </label>
+                            <label class="label-order" for="state">State<span class="required"> *</span> :
+                                <input class="input-order" type="state" name="state" id="state" autocomplete="state"
+                                    required placeholder="Enter your state" aria-required="true" />
+                                </input>
+                            </label>
+                            <label class="label-order" for="zip">ZIP Code<span class="required"> *</span> :
+                                <input class="input-order" type="zip" name="zip" id="zip" autocomplete="zip" required
+                                    placeholder="Enter your ZIP code" aria-required="true" />
+                                </input>
+                            </label>
+                            <label class="label-order" for="deliveryNote">Add delivery instructions: </label>
+                            <textarea id="deliveryNote" name="deliveryNote" minlength="2" maxlength="350"
+                                placeholder="Write 350 characters or less" aria-required="true"></textarea>
+                        </fieldset>
+                        <fieldset class="fieldset-order">
+                            <legend class="legend-order">Pet Product Inventory</legend>
+                            <table>
+                                <caption id="orderTableCaption">Please select one product</caption>
+                                <thread> <!--collumns-->
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thread>
+                                <tbody> <!--rows-->
+                                    <tr>
+                                        <td>AGYM</td>
+                                        <td>
+                                            <label for="agym">
+                                                <input type="radio" name="productChoice" id="agym"
+                                                    value="Spinning Cat Scratcher Ball" required>
+                                                Spinning Cat Scratcher Ball
+                                            </label>
+                                        </td>
+                                        <td>$52.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jasonwell</td>
+                                        <td>
+                                            <label for="jasonwell">
+                                                <input type="radio" name="productChoice" id="jasonwell"
+                                                    value="Foldable Dog Pool">
+                                                Foldable Dog Pool
+                                            </label>
+                                        </td>
+                                        <td>$27.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expawlorer</td>
+                                        <td>
+                                            <label for="expawlorer">
+                                                <input type="radio" name="productChoice" id="expawlorer"
+                                                    value="Dog Fence Window">
+                                                Dog Fence Window
+                                            </label>
+                                        </td>
+                                        <td>$30.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lollimeow</td>
+                                        <td>
+                                            <label for="lollimeow">
+                                                <input type="radio" name="productChoice" id="lollimeow"
+                                                    value="Capsule Pet Travel Backpack">
+                                                Capsule Pet Travel Backpack
+                                            </label>
+                                        </td>
+                                        <td>$59.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drool'd</td>
+                                        <td>
+                                            <label for="Drool'd">
+                                                <input type="radio" name="productChoice" id="Drool'd"
+                                                    value="Cat Hamster Wheel">
+                                                Cat Hamster Wheel
+                                            </label>
+                                        </td>
+                                        <td>$349.75</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lollimeow</td>
+                                        <td>
+                                            <label for="lollimeow">
+                                                <input type="radio" name="productChoice" id="lollimeow"
+                                                    value="Sherpa Bubble Cat Carrier Backpack">
+                                                Sherpa Bubble Cat Carrier Backpack
+                                            </label>
+                                        </td>
+                                        <td>$79.99</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label class="label-order" for="qty">Enter Qty<span class="required"> *</span> (between 1
+                                and
+                                50) :
+                                <input class="input-order" type="number" name="qty" id="qty" required
+                                    placeholder="Enter Qty" maxlength="2" minlength="1" max="50" min="1"
+                                    aria-required="true" />
+                            </label>
+                            <button type="submitOrder">Submit Order</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p><span>&#169;</span> 2024 Rachel Higgins</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

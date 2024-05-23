@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="robots" content="noindex,noarchive,nofollow">
+   <title>Rachel Higgins</title>
+   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+   <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+   <link rel="stylesheet" href="main.css" />
+   <script src='main.js'></script>
+
+</head>
+
+<body>
+   <header>
+      <h1>Rachel Higgins</h1>
+      <img src="android-chrome-192x192.png" alt="Rachel Higgins">
+   </header>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html">Order</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="staff.html">Staff</a>
+   </nav>
+   <div class="staff-wrapper">
+      <main>
+         <section id="staff">
+            <h2>Staff List</h2>
+            <article>
+               <aside id="apiServiceStatus" class="floatrightStatus">
+                  <h3>API Service Status:</h3>
+                  <p id="online"></p>
+                  <p id="offline"></p>
+               </aside>
+               <p>Welcome to my Random Staff List Generator!</p>
+               <p>You can click the button multiple times. Each click generates a new row of data fetched from the <a
+                     href="https://randomuser.me/api/">Random User Generator</a> API.</p>
+               <p>If the service is down, the status message will update in the status box to the right.</p>
+
+               <button id="generateStaff" type="button">Generate Staff</button>
+
+               <table id="staffTable">
+                  <caption id="staffTableCaption">Staff Information</caption>
+                  <thead>
+                     <tr>
+                        <th>Photo</th>
+                        <th>Name & Email</th>
+                        <th>Phone</th>
+                        <th>Timezone</th>
+                     </tr>
+                  </thead>
+                  <tbody id="staffData">
+                     <!-- Data will be inserted here -->
+                  </tbody>
+               </table>
+            </article>
+         </section>
+      </main>
+      <footer>
+         <p><span>&#169;</span> 2024 Rachel Higgins</p>
+      </footer>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,772 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. ===== */
+
+/*   ----- Imports  -----  */
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400..1000;1,400..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/*   ----- Variables  -----  */
+/* Defining custom CSS variables for colors and other reusable values */
+:root {
+  --moondustLight: rgba(240, 255, 255, 0.80);
+  --moondust: rgb(198, 218, 231);
+  --translucentAzure: rgba(240, 255, 255, 0.367);
+  /* Fixed to rgba */
+  --bluedust: rgb(18, 89, 133);
+  --gunmetal: rgb(25, 52, 73);
+  --goldsand: rgba(249, 245, 227, 0.80);
+  --darkSlateGreen: rgb(63, 138, 111);
+  --buttonGreen: rgb(72, 174, 75);
+  --buttonHoverGreen: rgb(56, 149, 61);
+  --seaGreen: rgba(117, 200, 172, 0.502);
+  --translucentSeagreen: rgba(46, 139, 86, 0.268);
+  --translucentCornFlowerBlue: rgba(100, 148, 237, 0.566);
+  --blueGrey: rgba(23, 60, 128, 0.566);
+  --paleEmerald: rgb(40, 129, 70);
+  --translucentSunset: rgba(99, 47, 15, 0.369);
+  --darkForestGreen: rgb(46, 67, 46);
+  --darkTourquoise: rgb(0, 206, 209);
+  --aquaMarine: rgb(127, 255, 212);
+  --translucentAquamarine: rgba(127, 255, 212, 0.501);
+  --blueViolet: rgb(138, 43, 226);
+  --tangarine: rgb(236, 153, 0);
+  --bloodOrange: rgb(255, 101, 44);
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Setting background properties */
+  background-attachment: fixed;
+  background-image: url(images/beach_on_a_different_planet.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Text and font settings */
+  color: var(--moondust);
+  font-family: "Mulish", sans-serif;
+  font-size: clamp(13px, calc(0.8125rem + ((1vw - 7.68px) * 0.346)), 19.2px);
+  /* Responsive font size */
+  word-break: break-word;
+  line-height: 1.5;
+
+  /* Layout settings */
+  padding: 3% 3% 0 3%;
+  width: 100%;
+  height: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  /* Prevent text overflow */
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  /* Header styling */
+  color: var(--moondustLight);
+  width: 100%;
+  height: 2.5em;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  /* Responsive header image */
+  width: clamp(32px, calc(2rem + ((1vw - 3.9px) * 1.6035)), 66.7969px);
+  min-height: 0vw;
+  margin-left: 15px;
+  padding: 3px;
+}
+
+main {
+  /* Main content area styling */
+  color: var(--bluedust);
+  background-color: var(--moondustLight);
+  padding: 5%;
+  border-radius: 5px;
+}
+
+/* Centered content with max width */
+.wrapper {
+  margin: 0 auto;
+  max-width: 88%;
+  min-height: 0vw;
+}
+
+.staff-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 70%;
+}
+
+footer {
+  /* Footer styling */
+  background-color: var(--moondustLight);
+  border: 2px solid var(--bluedust);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  color: var(--gunmetal);
+  font-size: .9em;
+  padding: 10px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+
+
+/* ----- Anchors ----- Text links */
+a {
+  /* Default link color */
+  color: var(--bluedust);
+}
+
+a:link {
+  /* Link text formatting */
+  font-weight: bold;
+}
+
+a:hover {
+  /* Hover state for links */
+  color: var(--tangarine);
+}
+
+a:active {
+  /* Active state for links */
+  color: var(--bloodOrange);
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  /* Global navigation styling */
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+nav a {
+  /* Global navigation link styling */
+  background-color: rgba(39, 84, 118, 0.923);
+  border: 2px solid var(--gunmetal);
+  border-radius: 5px 5px 0 0;
+  color: var(--moondust);
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0 3 0 0;
+  padding: 3px 20px 5px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  /* Hover state for navigation links */
+  background-color: var(--aquaMarine);
+  color: seagreen;
+  border: 2px solid rgb(55, 117, 243);
+}
+
+.local {
+  /* Local navigation styling */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  text-align: left;
+  margin: 0px;
+}
+
+.local a {
+  /* Local navigation link styling */
+  background-color: rgba(0, 255, 255, 0.443);
+  border: 2px solid var(--bluedust);
+  border-radius: 0 0 0 0;
+  color: var(--tangarine);
+  font-size: 1em;
+  margin: 0 -2px -2px 0;
+  padding: 3px 20px 5px 20px;
+  text-decoration: none;
+}
+
+.local a:hover {
+  /* Hover state for local navigation links */
+  background-color: aquamarine;
+  color: seagreen;
+  border: 2px solid rgb(55, 117, 243);
+}
+
+/*  ----- Typography  ----- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Heading font */
+  font-family: "Archivo Black", sans-serif;
+}
+
+h1 {
+  /* Responsive font size for H1 */
+  font-size: clamp(24.5px, calc(1.53125rem + ((1vw - 3.9px) * 1.7023)), 61.44px);
+  min-height: 0vw;
+}
+
+strong {
+  /* Strong text */
+  font-weight: 800;
+}
+
+aside {
+  /* Aside element styling */
+  display: block;
+  align-items: center;
+  float: right;
+  background-color: var(--translucentAquamarine);
+  color: var(--bluedust);
+  border: 2px solid var(--bluedust);
+  border-radius: 5px;
+  max-width: 270px;
+  height: auto;
+  margin: 0 0 0 2%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+/*  ----- Table ----- */
+table {
+  /* Table styling */
+  color: var(--darkForestGreen);
+  font-family: "Mulish", sans-serif;
+  font-size: 1em;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  min-width: .1em;
+  table-layout: fixed;
+  margin-bottom: 5px;
+}
+
+table img {
+  /* Table image styling */
+  border: 1px solid var(--bluedust);
+  border-radius: 5px;
+  width: 40%;
+}
+
+caption {
+  /* Table caption styling */
+  color: var(--bluedust);
+  border: none;
+  padding-bottom: 2px;
+  font-weight: bold;
+  text-align: start;
+}
+
+caption[id="orderTableCaption"] {
+  text-align: center;
+}
+
+caption[id="staffTableCaption"] {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+thead {
+  border: 1px solid var(--darkSlateGreen);
+}
+
+tbody {
+  /* Table body styling */
+  border-radius: 5px;
+  border: 1px solid var(--darkSlateGreen);
+  margin: 0 auto;
+}
+
+tr th {
+  /* Table header cell styling */
+  background-color: var(--translucentSeagreen);
+  color: var (--darkForestGreen);
+  text-align: left;
+  border: none;
+  padding: 1%;
+}
+
+tr td {
+  /* Table data cell styling */
+  background-color: var(--translucentAzure);
+  color: var(--darkForestGreen);
+  border-bottom: 1px dashed var(--darkSlateGreen);
+  padding: 2%;
+  text-align: left;
+  word-break: break-word;
+}
+
+td label {
+  /* Table data cell label styling */
+  color: var(--darkForestGreen);
+}
+
+/*  ----- Form ----- */
+form {
+  /* Form styling */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--seaGreen);
+  padding: 25px;
+  border: 1px solid var(--darkSlateGreen);
+  border-radius: 4px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.form-order {
+  /* Form order styling */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+fieldset {
+  /* Fieldset styling */
+  border: 1px solid var(--bluedust);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  color: var(--bluedust);
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.fieldset-shipping,
+.fieldset-order {
+  /* Fieldset for shipping and order */
+  border: 2px solid var(--blueGrey);
+  min-height: 844.078px;
+}
+
+.fieldset-shipping {
+  /* Shipping fieldset specific styling */
+  max-width: 36.6em;
+}
+
+.fieldset-order {
+  /* Order fieldset specific styling */
+  max-width: 36.6em;
+}
+
+legend {
+  /* Legend styling */
+  border: none;
+  width: auto;
+  color: var(--bluedust);
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 3px;
+}
+
+.legend-order {
+  /* Order legend styling */
+  color: var(--blueGrey);
+  font-weight: 800;
+}
+
+label {
+  /* Label styling */
+  border: none;
+  width: 100%;
+  color: var(--bluedust);
+  margin: 0 20px 0 0;
+}
+
+.label-checkbox {
+  /* Checkbox label styling */
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.label-order[for="name"],
+.label-order[for="email"],
+.label-order[for="streetAddress"],
+.label-order[for="zip"] {
+  /* Order form label block display */
+  display: block;
+}
+
+.label-order[for="deliveryNote"] {
+  /* Delivery note label styling */
+  margin-top: 15.4%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.label-order[for="qty"] {
+  /* Quantity label styling */
+  margin-left: 1.5%;
+}
+
+input {
+  /* Input field styling */
+  border: 1px solid var(--gunmetal);
+  border-radius: 5px;
+  background-color: var(--moondustLight);
+  color: var(--darkForestGreen);
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 100%;
+}
+
+.input-contact[type="name"],
+.input-order[type="name"] {
+  /* Specific input field width and height */
+  max-width: 11em;
+  min-width: 2em;
+  max-height: 2em;
+}
+
+input.input-contact[type="email"],
+.input-order[type="email"],
+[type="street"] {
+  /* Specific input field width and height */
+  max-width: 15em;
+  min-width: 2em;
+  max-height: 2em;
+}
+
+.input-order[type="city"],
+.input-order[type="state"],
+.input-order[type="zip"] {
+  /* Specific input field width and height */
+  max-width: 145px;
+  max-height: 2em;
+}
+
+.input-order[type="number"] {
+  /* Specific input field width and height */
+  max-width: 86px;
+  min-width: 6.5em;
+  max-height: 2em;
+}
+
+input[type="radio"] {
+  /* Radio button styling */
+  appearance: none;
+  background-color: var(--moondustLight);
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 10px;
+  border: .15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: inline-grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type="radio"]::before {
+  /* Radio button inner circle */
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em blueviolet;
+}
+
+input[type="radio"]:checked::before {
+  /* Checked radio button inner circle */
+  transform: scale(1);
+}
+
+input[type="checkbox"] {
+  /* Checkbox styling */
+  appearance: none;
+  background-color: var(--moondustLight);
+  color: currentColor;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  border: .15em solid currentColor;
+  border-radius: 4px;
+  transform: translateY(0.3em);
+  cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+  /* Checkbox check mark */
+  content: "\2713";
+  color: blueviolet;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 120ms transform ease-in-out;
+  display: none;
+}
+
+input[type="checkbox"]:checked::after {
+  /* Display check mark when checked */
+  display: block;
+}
+
+textarea {
+  /* Textarea styling */
+  border: 1px solid var (--gunmetal);
+  border-radius: 5px;
+  background-color: var(--moondustLight);
+  color: var(--darkForestGreen);
+  padding: 5px;
+  width: 85%;
+  height: 150px;
+  display: block;
+}
+
+select {
+  /* Dropdown select styling */
+  border: 1px solid var(--gunmetal);
+  border-radius: 5px;
+  background-color: var(--moondustLight);
+  color: var(--darkForestGreen);
+  max-width: 30%;
+  padding: 3px;
+  cursor: pointer;
+}
+
+button {
+  /* Button styling */
+  appearance: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--buttonGreen);
+  color: white;
+  width: 89/95px;
+  height: 38px;
+  padding: 10px 20px;
+  border: 1px solid rgb(0, 111, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submitOrder"] {
+  /* Order submit button styling */
+  width: 140px;
+  height: 38px;
+  margin-left: 1.5%;
+}
+
+button:hover {
+  /* Hover state for buttons */
+  background-color: var(--buttonHoverGreen);
+  box-shadow: 0 2px 4px rgba(164, 112, 21, 0.487);
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+input:focus {
+  /* Hover and focus states for form elements */
+  background-color: var(--translucentCornFlowerBlue);
+}
+
+*:required {
+  /* Required fields styling */
+  border: 2px solid var(--paleEmerald);
+}
+
+.required {
+  /* Required field indicator styling */
+  font-weight: 700;
+}
+
+label.required:after {
+  /* Add asterisk to required labels */
+  content: " *";
+  color: red;
+}
+
+input.invalid {
+  /* Invalid input styling */
+  border: 3px solid red;
+}
+
+input.valid {
+  /* Valid input styling */
+  border: 2px solid green;
+}
+
+*::placeholder {
+  /* Placeholder text color */
+  color: var(--translucentSunset);
+}
+
+*,
+*:before,
+*:after {
+  /* Apply box-sizing: border-box to all elements */
+  box-sizing: border-box;
+}
+
+.form-control {
+  /* Form control grid layout */
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control+.form-control {
+  /* Spacing between form controls */
+  margin-top: 1em;
+}
+
+/* ----- Media ----- */
+.gallery {
+  /* Gallery layout */
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallery figure {
+  /* Gallery item styling */
+  margin: 30px;
+  padding: 5px;
+  max-width: 385px;
+}
+
+.gallery figure img {
+  /* Gallery image styling */
+  border: 3px solid var(--bluedust);
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.gallery figcaption {
+  /* Gallery caption styling */
+  color: var(--gunmetal);
+  font-size: .8em;
+  padding: 5px;
+}
+
+@media all and (max-width: 650px) {
+  .staff-wrapper {
+    /* Staff element main styling */
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  table img {
+    /* Table image styling */
+    width: 100%;
+  }
+
+}
+
+/*   ===== MOBILE  media query ===== */
+@media all and (max-width: 900px) {
+
+  /* Add mobile-specific styles here */
+  body {
+    /* Body styling */
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+  }
+
+  header {
+    /* Header styling */
+    font-size: 1.2em;
+  }
+
+  header img {
+    /* Header image styling */
+    width: 32px;
+  }
+
+  main {
+    /* Main content area styling */
+    padding: 5%;
+  }
+
+  .wrapper {
+    /* Centered content with max width */
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+
+  nav.global a {
+    /* Global navigation link styling */
+    font-size: 1em;
+  }
+
+  table img {
+    width: 50%;
+  }
+
+  .form-order {
+    /* Stacking items vertically on small screens */
+    grid-template-columns: 1fr;
+  }
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+  /* Add tablet-specific styles here */
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (max-width: 1600px) {
+
+  /* Add desktop-specific styles here */
+  table img {
+    width: 50%;
+
+  }
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+  /* Add print-specific styles here */
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,noarchive,nofollow">
+    <title>Rachel Higgins</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Rachel Higgins</h1>
+        <img src="android-chrome-192x192.png" alt="Rachel Higgins">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+    <div class="wrapper">
+        <main>
+            <section class="formSection">
+                <section>
+                    <h2>Contact</h2>
+                    <p>This form allows you to send a message or inquiry directly to the owner or administrator of this
+                        website. It's a convenient way to reach out for information, assistance, or to provide feedback.
+                        Simply fill in the required fields marked with an asterisks (*). Include your name, email
+                        address,
+                        and
+                        message, and click submit.</p>
+                </section>
+                <form id="contactForm" action="contact_response.html" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">First and Last Name<span class="required"> *</span>:
+                            <input class="input-contact" type="text" name="name" id="name" autocomplete="name" required
+                                placeholder="First and last name" autofocus aria-required="true" />
+                        </label>
+
+                        <label for="email">Email<span class="required"> *</span>:
+                            <input class="input-contact" type="email" name="email" id="email" autocomplete="email"
+                                required pattern="[^ @]+@[^ @]+\.[a-z]+" placeholder="name@host.com"
+                                aria-required="true" />
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message</legend>
+                        <label for="message">Type Message Here<span class="required"> *</span>:</label>
+                        <textarea id="message" name="message" minlength="2" maxlength="350" required
+                            placeholder="Write 350 characters or less." aria-required="true"></textarea>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Inquiry Type</legend>
+                        <label for="inquiryType">What are you inquiring about<span class="required"> *</span>:</label>
+                        <select name="inquiryType" id="inquiryType" required>
+                            <option value="" disabled selected>Select Inquiry Type</option>
+                            <option value="project-collaboration">Project Collaboration</option>
+                            <option value="job-opportunity">Job Opportunity</option>
+                            <option value="question-about-portfolio">Question about Portfolio</option>
+                            <option value="technical-assistance">Technical Assistance</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Preference</legend>
+                        <label> Would you like to be contacted by email?<span class="required"> *</span>:</label>
+                        <label for="yes">
+                            <input type="radio" name="contactPreference" id="yes" value="Yes" required>
+                            Yes
+                        </label>
+                        <label for="no">
+                            <input type="radio" name="contactPreference" id="no" value="No">
+                            No
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Programming Languages</legend>
+                        <label>Select the programming language(s) relevant to your inquiry:</label>
+                        <label class="label-checkbox" for="javascript">
+                            <input type="checkbox" name="language" id="javascript" value="JavaScript" />
+                            JavaScript
+                        </label>
+                        <label class="label-checkbox" for="java">
+                            <input type="checkbox" name="language" id="java" value="Java">
+                            Java
+                        </label>
+                        <label class="label-checkbox" for="c++">
+                            <input type="checkbox" name="language" id="c++" value="C++" />
+                            C++
+                        </label>
+                        <label class="label-checkbox" for="python">
+                            <input type="checkbox" name="language" id="python" value="Python" />
+                            Python
+                        </label>
+                        <label class="label-checkbox" for="typescript">
+                            <input type="checkbox" name="language" id="typescript" value="TypeScript" />
+                            TypeScript
+                        </label>
+                        <label class="label-checkbox" for="swift">
+                            <input type="checkbox" name="language" id="swift" value="Swift" />
+                            Swift
+                        </label>
+                        <label class="label-checkbox" for="sql">
+                            <input type="checkbox" name="language" id="sql" value="SQL" />
+                            SQL
+                        </label>
+                    </fieldset>
+
+                    <button id="submitContact" type="submit">Submit</button>
+                </form>
+
+                <article>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p><span>&#169;</span> 2024 Rachel Higgins</p>
+        </footer>
+    </div>
+</body>
+
+</html>

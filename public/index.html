@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,noarchive,nofollow">
+    <title>Rachel Higgins</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Rachel Higgins</h1>
+        <img src="android-chrome-192x192.png" alt="Rachel Higgins">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Web Dev Concepts</h2>
+            <nav class="local">
+                <a href="#webServers">Web Servers</a>
+                <a href="#frontendDesign">Frontend Design</a>
+                <a href="#optimizingImages">Optimizing Images</a>
+                <a href="#cascadingStylesheets">Cascading Stylesheets</a>
+                <a href="#forms">Forms</a>
+                <a href="#nodeExpress">Node / Express</a>
+                <a href="#javaScript">JavaScript</a>
+            </nav>
+            <article class="web servers">
+                <article id="webServers">
+                    <h3>Web Servers</h3>
+                    <p>A <strong>designated home page</strong> is often the <strong>index</strong> file. This is the
+                        default file that is served when a user requests the root directory of a website, and it usually
+                        contains the main content of the website. The name of the designated home page varies depending
+                        on the server and language used. For example, <strong>index.html</strong> or
+                        <strong>index.php</strong> is often the designate homepage in Apache servers.
+                    </p>
+                    <p>The browser's Web Dev/Inspector Network tab displays the files that are being requested and
+                        loaded by the browser. These files are known as <strong>resources</strong>. Network tab displays
+                        the <strong>age</strong> of the file, its <strong>cache details</strong>, server
+                        <strong>date</strong>, <strong>last-modified</strong> date, <strong>server type</strong>, and
+                        <strong>code</strong> read by the server.
+                    </p>
+                    <p>The file details are different when viewed from the web server because the file details may
+                        include additional information such as the <strong>status</strong> of the file, <strong>HTTP
+                            headers</strong>, <strong>server configurations</strong>, and <strong>permissions</strong>.
+                    </p>
+                    <p>The favicon.ico file has a status <strong>200</strong> because the file was <strong>successfully
+                            found</strong> and loaded by the browser. The main.css and main.js files have a status
+                        <strong>400</strong> because the files are <strong>not found</strong> and cannot be loaded by
+                        the browser.
+                    </p>
+                    <p>The <strong>scheme</strong> is the protocol that is used to communicate with the client. The
+                        <strong>subdomains</strong> are the subdomains of the host domain. The <strong>host
+                            domain</strong> is the domain of the web server. The <strong>resources</strong> are the
+                        resources that are being loaded by the browser. The parts of the web server's
+                        <strong>URL</strong> are as follows, the <strong>scheme:</strong> https://, the
+                        <strong>subdomains:</strong> web.engr., the <strong>domain:</strong> oregonstate.edu, and the
+                        <strong>resources:</strong> /~higgirac/a1-higgirac/ .
+                    </p>
+                </article>
+                <article class="frontend design">
+                    <article id="frontendDesign">
+                        <h3>Frontend Design</h3>
+                        <p><strong>Frontend Design</strong> is the process of creating the <strong>user
+                                interface</strong> and <strong>user experience</strong> of a website or web application.
+                            This involves using technologies such as <strong>HTML</strong>, <strong>CSS</strong>, and
+                            <strong>JavaScript</strong> to build the visual and structural elements of a web page. HTML
+                            (HyperText Markup Language) is used to define the structure, including paragraphs, headings,
+                            links, and images among other content elements. CSS (Cascading Style Sheets) is applied to
+                            HTML for stylistic decision making in regards to these elements. Finally, JavaScript is used
+                            to create web pages' dynamic behavior. Frontend design also involves
+                            <strong>usability</strong> and <strong>inclusivity</strong> considerations in the design and
+                            engineering process. These concepts when applied in frontend design work together to build
+                            interfaces that are visually appealing, and user-friendly.
+                        </p>
+                        <dl>
+                            <dt><strong>Effective:</strong></dt>
+                            <dd>A website or product’s capability of facilitating users in achieving their objectives
+                                without encountering significant errors or inaccuracies.</dd>
+                            <dt><strong>Efficient:</strong></dt>
+                            <dd>The ability of users to accomplish tasks in the shortest possible timeframe and with
+                                minimal effort.</dd>
+                            <dt><strong>Easy to Navigate:</strong></dt>
+                            <dd>Ensures that users can effortlessly find their desired content or functionalities,
+                                particularly with those unfamiliar with the interface.</dd>
+                            <dt><strong>Error-free:</strong></dt>
+                            <dd>The aim of identifying and addressing common user errors is to eliminate and minimize
+                                issues that can negatively impact the accessibility and availability to desired
+                                resources for the user.</dd>
+                            <dt><strong>Enoyable to Use; Engaging:</strong></dt>
+                            <dd>Fosters user engagement and satisfaction by satisfying the unique needs and preferences
+                                of the intended audience, and by effectively incorporating the previous 4 "E"s into the
+                                product design process.</dd>
+                        </dl>
+                        <p>The <strong>&lt;header&gt;</strong> tag is used to define the introductory section of a
+                            webpage which typically includes the name, publisher, and marketing slogan. The
+                            <strong>&lt;main&gt;</strong> tag is used to define the main content area. The
+                            <strong>&lt;nav&gt;</strong> tag is used to define a section of navigation links allowing
+                            users to navigate to different pages or sections within a website. Main menu, search, tools,
+                            stories, locations, and legal links are typically included in sets of navigation. The
+                            <strong>&lt;section&gt;</strong> tag is used to divide a webpage into content blocks. It
+                            organizes related, but not standalone, content into meaningful portions. The
+                            <strong>&lt;article&gt;</strong> tag defines standalone content which can can be distributed
+                            and reused independently. The <strong>&lt;footer&gt;</strong> tag defines the bottom section
+                            of a webpage which often contains copyright information, contact information, and links to
+                            critical pages.
+                        </p>
+                        <ol>
+                            <li><strong>Linking to External Content</strong> allows for easy navigation to external
+                                content. This requires the <strong>Anchor</strong> element <strong>&lt;a&gt;</strong> to
+                                create a <strong>hyperlink</strong> that specifies the <strong>URL</strong> of the
+                                external website using the <strong>href</strong> attribute. For example, &lt;a
+                                href=“https://example.com"&gt;External Link&lt;/a&gt;.</li>
+                            <li><strong>Linking to Internal Content</strong> is the act of linking to internal content
+                                within the same webpage by using Anchor tags with href attributes pointing to
+                                <strong>IDs</strong> which define the reference for an anchor. For example, the id:
+                                "&lt;article id=“Introduction”&gt;The content for this section…&lt;/article&gt;", and
+                                the anchor: &lt;a href=“#Introduction”&gt;Introduction&lt;/a&gt;.
+                            </li>
+                            <li><strong>Linking Page-to-Page Content</strong> is the creation of links to other webpages
+                                within the same website, creating <strong>page-to-page navigation</strong>. This is
+                                accomplished by specifying the <strong>relative</strong> (for internal resources) or
+                                <strong>absolute</strong> (for external resources) URL of the target page in the href
+                                attribute. For example, &lt;a href=“../images/logos.png”&gt;Image logo&lt;/a&gt;, or
+                                &lt;a href=“https://example.com/app/images/logos.png"&gt;Image logo&lt;/a&gt;.
+                            </li>
+                        </ol>
+                    </article>
+                    <article class="optimizing images">
+                        <article id="optimizingImages">
+                            <h3>Optimizing Images</h3>
+                            <p>There are six major specifications for optimizing images:</p>
+                            <ol>
+                                <li><strong>Descriptive File Name:</strong> Enhances search engine optimization (SEO) by
+                                    making the image content clear and searchable. Using specific descriptors helps
+                                    search engines categorize and display the image appropriately in search results.
+                                </li>
+                                <li><strong>Small File Size:</strong> Improves website loading times by reducing the
+                                    amount of data transferred when a page is accessed. This is achieved through
+                                    compression techniques, which can either be lossy (reducing quality) or lossless
+                                    (maintaining quality).</li>
+                                <li><strong>Exact Dimensions:</strong> Ensures that images fit precisely within the
+                                    designated space on a webpage without needing to be resized by the browser, which
+                                    can slow down page load times and degrade image quality.</li>
+                                <li><strong>Correct File Format:</strong> Selecting the right file format (e.g., JPG,
+                                    PNG, GIF) based on the nature of the image and its use on the web optimizes the
+                                    balance between quality and file size. Different formats are suited for different
+                                    types of images and uses.</li>
+                                <li><strong>Reduced Resolution:</strong> Matches the image resolution to the
+                                    capabilities of most viewing devices, which is typically lower than the resolution
+                                    used for printing. This avoids unnecessary high resolution that can increase file
+                                    size without a visible improvement in quality on standard displays.</li>
+                                <li><strong>Color Mode:</strong> Chooses the appropriate color mode (RGB or Indexed) for
+                                    the image based on how it will be displayed. RGB is used for most images due to its
+                                    broad color range, while Indexed is useful for simpler images to reduce file size.
+                                </li>
+                            </ol>
+                            <p>Different image file formats are optimized for specific types of content due to their
+                                unique compression methods and color support. <strong>Photos</strong>, which usually
+                                contain complex color gradients and details, are best served by the <strong>JPEG
+                                    (JPG)</strong> format. JPEG offers a good balance between quality and file size
+                                through adjustable compression that reduces file size while maintaining accuracy. For
+                                <strong>line art</strong>, such as logos or simple graphics with fewer colors, the
+                                <strong>GIF</strong> format is suitable because it supports a limited color palette (up
+                                to 256 colors), which helps keep the file size small. Additionally, <strong>PNG</strong>
+                                can be a good choice for line art that requires high clarity with support for
+                                transparency and lossless compression, preserving the sharpness of edges without
+                                degradation over multiple edits.
+                            </p>
+                            <p>Browsers and devices utilize <strong>Favicons</strong> to improve user navigation and
+                                strengthen brand identity across various interfaces. These small icons appear in browser
+                                tabs, assisting users in quickly identifying and switching between sites. Favicons are
+                                also used in bookmarks and browser history, offering a visual sign that makes specific
+                                pages easier to find. Furthermore, when websites are saved to a smartphone’s home screen
+                                or as app shortcuts, favicons serve as the application icons, enhancing recognition.
+                                Some search engines display favicons in search results, further aiding brand visibility
+                                and user orientation. </p>
+                        </article>
+                        <article class="cacading stylesheets">
+                            <article id="cascadingStylesheets">
+                                <h3>Cacading Stylesheets</h3>
+                                <p>Stylesheets, typically <strong>CSS (Cascading Style Sheets)</strong>, are essential
+                                    for websites and apps because they enable developers to separate content from
+                                    design, allowing for more efficient and flexible styling across multiple web pages.
+                                    This separation simplifies maintaining and updating the visual appearance of a site
+                                    or app. Stylesheets enhance user experience by providing consistent theming and
+                                    responsive design, ensuring that websites and apps look good on various devices and
+                                    screen sizes. Additionally, CSS can improve load times and performance by reducing
+                                    the need for inline styling and repetitive code.</p>
+                                <p>Incorporating styles in web development can be achieved through five main methods,
+                                    each offering unique advantages. <strong>External stylesheets</strong> are used
+                                    widely for their efficiency in applying consistent styles across multiple pages via
+                                    a single CSS file, making maintenance and updates easier. <strong>Imported
+                                        CSS</strong> in a global stylesheet allows modular management of styles but can
+                                    increase load times due to additional HTTP requests. <strong>Embedded CSS</strong>
+                                    within an HTML file using the <strong>&lt;style&gt;</strong> tag is useful for
+                                    page-specific styles, simplifying deployment without affecting other pages.
+                                    <strong>Inline styles</strong> applied directly to HTML elements with the style
+                                    attribute are good for quick, one-off modifications, although they hinder style
+                                    reusability and clutter HTML. Lastly, <strong>JavaScript-based styling</strong>
+                                    manipulates styles dynamically which is ideal for interactive and condition-based
+                                    styling, enhancing user experiences by adapting to runtime conditions.
+                                </p>
+                            </article>
+                            <article class="forms">
+                                <article id="forms">
+                                    <h3>Forms</h3>
+                                    <p>The six primary goals of accessible forms:</p>
+                                    <ol>
+                                        <li><strong>Provide clear instructions:</strong> Clear instructions above the
+                                            form and in the labels helps users understand how to interact with the form
+                                            and provide the required information accurately.</li>
+                                        <li><strong>Inform users about data collection and required fields:</strong>
+                                            Clear communication about why certain data is being collected and which
+                                            fields are mandatory helps users understand the form's purpose and
+                                            requirements.</li>
+                                        <li><strong>Set the first field to autofocus:</strong> Autofocusing the first
+                                            field allows users to start typing immediately without manually selecting
+                                            the input field, enhancing usability and efficiency.</li>
+                                        <li><strong>Accessible via keyboard:</strong> Keyboard accessibility ensures
+                                            that users who cannot or prefer not to use a mouse can navigate and interact
+                                            with every form effectively.</li>
+                                        <li><strong>Tab indexing to complex forms:</strong> Tab indexing specifies the
+                                            order in which form fields are navigated when using the tab key, improving
+                                            the logical flow and usability of complex forms.</li>
+                                        <li><strong>Ensure validation messages are screen-readable:</strong>
+                                            Screen-readable validation messages ensure that users, including those using
+                                            screen readers, receive clear and understandable feedback about errors or
+                                            validation issues with their form submissions.</li>
+                                    </ol>
+                                    <p>Major HTML tags used in forms:</p>
+                                    <ul>
+                                        <li><strong>&lt;form&gt;</strong>: Defines a document section containing form
+                                            elements. Attributes include "action" (specifies where the form data is
+                                            sent) and "method" (specifies HTTP method for submitting form data).</li>
+                                        <li><strong>&lt;fieldset&gt;</strong>: Groups related form controls together,
+                                            which helps with accessibility and organization. It can contain one or more
+                                            <strong>&lt;legend&gt;</strong> tags for labeling the group.
+                                        </li>
+                                        <li><strong>&lt;legend&gt;</strong>: Provides a caption or label for a
+                                            <strong>&lt;fieldset&gt;</strong> element, helping users understand the
+                                            purpose of the grouped form controls.
+                                        </li>
+                                        <li><strong>&lt;label&gt;</strong>: Associates a label with a form control,
+                                            improving accessibility and usability. Uses the "for" attribute to link to
+                                            the "id" of the associated control.</li>
+                                        <li><strong>&lt;input&gt;</strong>: Represents an input control, such as text
+                                            input, checkbox, radio button, etc. Attributes include "type" (specifies the
+                                            type of input), "name" (defines the name of the input field), and "required"
+                                            (indicates if the field is mandatory).</li>
+                                        <li><strong>&lt;select&gt;</strong>: Creates a dropdown list of options.
+                                            Contains one or more <strong>&lt;option&gt;</strong> tags for specifying the
+                                            available choices. Attributes include name (defines the name of the select
+                                            field) and "multiple" (allows multiple selections if present).</li>
+                                        <li><strong>&lt;textarea&gt;</strong>: Defines a multiline text input control.
+                                            Attributes include "name" (defines the name of the textarea field) and
+                                            "rows"/"cols" (specifies the visible number of rows/columns).</li>
+                                        <li><strong>&lt;button&gt;</strong>: Defines a clickable button often used for
+                                            form submission. It can have attributes like "type" (specifies the type of
+                                            button, e.g., "submit" or "reset") and "disabled" (turns off the button).
+                                        </li>
+                                    </ul>
+                                </article>
+                                <article class="node/express">
+                                    <article id="nodeExpress">
+                                        <h3>Node / Express</h3>
+                                        <p><strong>Node.js, npm, and Express.js</strong> are essential technologies in
+                                            modern web development.</p>
+                                        <p><strong>Node.js</strong> is a runtime environment that allows developers to
+                                            run JavaScript code outside a web browser and use JavaScript on the client
+                                            and server sides, allowing full-stack JavaScript development. Due to its
+                                            non-blocking and event-driven architecture, Node.js is highly scalable and
+                                            capable of efficiently handling many concurrent connections. Node.js offers
+                                            developers the ability to build scalable and high-performance applications
+                                            efficiently.</p>
+                                        <p><strong>npm (Node Package Manager)</strong> is the default package manager
+                                            for Node.js. It installs, manages, and shares packages of JavaScript code.
+                                            npm provides access to an extensive ecosystem of open-source libraries and
+                                            tools that can be easily integrated into Node.js projects. npm simplifies
+                                            dependency management and allows developers to leverage existing solutions
+                                            to accelerate development.</p>
+                                        <p><strong>Express.js</strong> is a web application framework for Node.js
+                                            designed to build web applications and APIs. It provides robust features for
+                                            handling HTTP requests and responses, routing, middleware integration,
+                                            templating engines, and more. Express.js follows the middleware pattern,
+                                            allowing developers to combine modular components to create powerful and
+                                            flexible applications.</p>
+                                        <p>These three technologies improve modern web development, allowing developers
+                                            to build efficient, scalable, and flexible web applications and APIs.</p>
+                                    </article>
+                                    <article class="javaScript">
+                                        <article id="javaScript">
+                                            <h3>JavaScript</h3>
+                                            <p><strong>JavaScript</strong> has several fundamental <strong>data
+                                                    types</strong> that are used to manipulate
+                                                <strong>variables</strong> and store <strong>values</strong>. These
+                                                include <strong>primitive data types</strong> like
+                                                <strong>strings</strong>, <strong>numbers</strong>,
+                                                <strong>symbols</strong>, and <strong>booleans</strong>, representing
+                                                textual data, numerical data, unique identifiers, and true/false values.
+                                                A <strong>Symbol</strong> is a unique and immutable data type
+                                                introduced in ES6 to create unique identifiers for object properties.
+                                                Its uniqueness makes symbols ideal for defining object properties that
+                                                must be private or protected from accidental changes or collisions in
+                                                large codebases. There are also <strong>null</strong> and
+                                                <strong>undefined</strong>, which signify the absence of a meaningful
+                                                value and an uninitialized state. JavaScript also supports complex data
+                                                types like objects, which are collections of properties mapped by
+                                                strings or symbols and can contain various data types.
+                                                <strong>Objects</strong> serve as a fundamental building block in
+                                                JavaScript and can be used to create more complex structures like
+                                                arrays, functions, and more. A <strong>Function</strong> is another
+                                                complex data type. Functions are blocks of code designed to perform a
+                                                particular task or calculate values and can be invoked throughout the
+                                                program.
+                                            </p>
+                                            <p><strong>Objects</strong> in JavaScript are used to store keyed
+                                                collections of various data and more complex entities. An object is
+                                                created by listing <strong>properties</strong> inside curly braces
+                                                <strong>{}</strong>, with each property being a <strong>key-value
+                                                    pair</strong>. <strong>Arrays</strong> are unique kinds of objects
+                                                used for storing ordered collections of items, accessible by
+                                                <strong>indices</strong>. <strong>JSON (JavaScript Object
+                                                    Notation)</strong> is a lightweight data-interchange format that
+                                                uses human-readable text to store and transmit data objects consisting
+                                                of <strong>attribute-value pairs</strong>. It is heavily used for data
+                                                exchange between a server and web applications.
+                                            </p>
+                                            <p><strong>Conditionals</strong> and <strong>Loops</strong> are used in
+                                                JavaScript to control the flow of execution based on
+                                                different conditions and to perform repetitive tasks, respectively.
+                                                Conditionals like <strong>if</strong>, <strong>else</strong>, and
+                                                <strong>switch</strong> allow the code to execute different blocks based
+                                                on various conditions. Loops, such as <strong>for</strong>,
+                                                <strong>while</strong>, and <strong>do-while</strong>, enable executing
+                                                a code block multiple times until a specified condition fails. These
+                                                structures are fundamental for creating dynamic behavior in
+                                                applications.
+                                            </p>
+                                            <p><strong>Object-oriented programming (OOP)</strong> is a programming
+                                                paradigm based on the concept of "objects", which can contain data, in
+                                                the form of fields (often known as attributes or properties), and code,
+                                                in the form of functions (often known as methods). In JavaScript, OOP is
+                                                implemented using <strong>prototypes</strong> and
+                                                <strong>classes</strong>. Classes provide a more straightforward and
+                                                cleaner way to create objects and deal with inheritance, allowing more
+                                                complex and modular software development.
+                                            </p>
+                                            <p><strong>Functional programming</strong> is a programming paradigm where
+                                                programs are constructed by applying and composing functions. Functional
+                                                programming is declarative and avoids shared state, mutable data, and
+                                                side effects. JavaScript supports functional programming by treating
+                                                functions as having special privileges, meaning that functions can be
+                                                assigned to variables, passed as arguments, and returned from other
+                                                functions, enabling a flexible approach to software construction.</p>
+                                        </article>
+        </section>
+    </main>
+    <footer>
+        <p><span>&#169;</span> 2024 Rachel Higgins</p>
+    </footer>
+</body>
+
+</html>
